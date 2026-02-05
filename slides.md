@@ -47,6 +47,36 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+src: ./pages/00-introduction.md
+hide: false
+---
+
+---
+src: ./pages/01-git-fundamentals.md
+hide: false
+---
+
+---
+src: ./pages/02-merge-vs-rebase.md
+hide: false
+---
+
+---
+src: ./pages/03-historique-git.md
+hide: false
+---
+
+---
+src: ./pages/04-livrer-avec-git.md
+hide: false
+---
+
+---
+src: ./pages/05-trunk-based-development.md
+hide: false
+---
+
+---
 transition: fade-out
 ---
 
