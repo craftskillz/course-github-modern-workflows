@@ -24,7 +24,7 @@ mdc: true
 duration: 35min
 ---
 
-# Welcome to Slidev
+# Best Practices For Smooth Deliveries
 
 <!--Presentation slides for developers
 
@@ -47,32 +47,62 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-src: ./pages/00-introduction.md
+src: ./pages/00-constat.md
 hide: false
 ---
 
 ---
-src: ./pages/01-git-fundamentals.md
+src: ./pages/01-formation.md
 hide: false
 ---
 
 ---
-src: ./pages/02-merge-vs-rebase.md
+src: ./pages/02-git-fundamentals.md
 hide: false
 ---
 
 ---
-src: ./pages/03-historique-git.md
+src: ./pages/03-trunk-based-development.md
 hide: false
 ---
 
 ---
-src: ./pages/04-livrer-avec-git.md
+src: ./pages/04-commit.md
 hide: false
 ---
 
 ---
-src: ./pages/05-trunk-based-development.md
+src: ./pages/04-git-push.md
+hide: false
+---
+
+---
+src: ./pages/05-origin-remote.md
+hide: false
+---
+
+---
+src: ./pages/05-git-pull.md
+hide: false
+---
+
+---
+src: ./pages/06-merge-vs-rebase.md
+hide: false
+---
+
+---
+src: ./pages/07-historique-git.md
+hide: false
+---
+
+---
+src: ./pages/08-livrer-avec-git.md
+hide: false
+---
+
+---
+src: ./pages/09-trunk-based-development.md
 hide: false
 ---
 
@@ -583,7 +613,7 @@ Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML D
 ---
 foo: bar
 dragPos:
-  square: 691,32,167,_,-16
+  square: -15,0,0,0
 ---
 
 # Draggable Elements

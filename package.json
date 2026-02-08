@@ -11,6 +11,9 @@
     "@slidev/cli": "^52.11.5",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
-    "vue": "^3.5.27"
+    "gsap": "^3.14.2",
+    "konva": "^10.2.0",
+    "vue": "^3.5.27",
+    "vue-konva": "^3.3.0"
   }
 }
