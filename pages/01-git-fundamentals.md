@@ -1,75 +1,261 @@
-## Git n’est PAS GitHub
+# Git n’est pas GitHub
+Git fonctionne même sans Internet.
 
-Git :
+<div grid="~ cols-2 gap-4">
+<div>
+
+<span class="underline decoration-orange-500 underline-offset-2">Git :</span>
 
 - est un outil local
 - gère des commits, branches, tags
+    
+</div>
+<div>
 
-GitHub / GitLab :
+<span class="underline decoration-orange-500 underline-offset-2">GitHub / GitLab : </span>
 
 - hébergent des dépôts
 - ajoutent PR, permissions, UI
 
-Git fonctionne même sans Internet.
+</div>
+</div>
+
+---
+layout: center
+---
+
+# Distributed Version Control (DVCS)
+Comment ca fonctionne ?
+
+
+<div class="relative w-[800px] mx-auto">
+  <img src="./public/images/git-push-pull.png" alt="DVCS diagram" class="w-[800px]" />
+
+  <div
+    v-click.hide
+    class="absolute text-3xl font-bold bg-white/80 px-3 py-1 rounded"
+    style="left: 240px; top: 75px;"
+  >
+    ?
+  </div>
+
+  <div
+    v-after
+    class="absolute text-3xl font-bold bg-white/80 px-3 py-1 rounded"
+    style="left: 210px; top: 75px;"
+  >
+    GIT PUSH
+  </div>
+
+  <div
+    v-click.hide
+    class="absolute text-3xl font-bold bg-white/80 px-3 py-1 rounded"
+    style="left: 220px; top: 250px;"
+  >
+    ?
+  </div>
+
+  <div
+    v-after
+    class="absolute text-3xl font-bold bg-white/80 px-3 py-1 rounded"
+    style="left: 160px; top: 250px;"
+  >
+    GIT PULL
+  </div>
+
+</div>
+
 
 ---
 
-## Ce qu’est vraiment Git
-
-Git est :
+# Ce qu’est vraiment Git
 
 - un journal
 - une suite de snapshots
 - une histoire du code
 
-Git n’est pas :
+<arrow x1="600" y1="100" x2="500" y2="205" color="#953" width="2" arrowSize="1" />
+<div
+  class="absolute text-xs font-semibold text-[#953]"
+  style="left: 610px; top: 70px;"
+>
+  C'est également le Hash (ou Sha1) du commit, par exemple 22a81b0014852685a97e4d7f7385a7fb6d0333c3 
+</div>
 
-- un outil de workflow
-- un outil de déploiement
-- un outil de validation métier
+<!-- Tailwind / Slidev (UnoCSS) -->
+<div class="mx-auto w-200 px-6 py-5">
+  <!-- 5 colonnes -->
+  <div class="grid grid-cols-5 gap-x-5 gap-y-2 items-start text-center">
+    <!-- ====== En-têtes ====== -->
+    <div class="flex justify-center">
+      <span class="inline-flex rounded-xl bg-violet-600 px-6 py-3 text-white font-semibold shadow">
+        Initial version
+      </span>
+    </div>
+    <div class="flex justify-center">
+      <span class="inline-flex rounded-xl bg-violet-600 px-8 py-3 text-white font-semibold shadow">
+        Version 2
+      </span>
+    </div>
+    <div class="flex justify-center">
+      <span class="inline-flex rounded-xl bg-violet-600 px-8 py-3 text-white font-semibold shadow">
+        Version 3
+      </span>
+    </div>
+    <div class="flex justify-center">
+      <span class="inline-flex rounded-xl bg-violet-600 px-8 py-3 text-white font-semibold shadow">
+        Version 4
+      </span>
+    </div>
+    <div class="flex justify-center">
+      <span class="inline-flex rounded-xl bg-violet-600 px-8 py-3 text-white font-semibold shadow">
+        Version 5
+      </span>
+    </div>
+    <!-- ====== Rangée 2 (A) ====== -->    
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <!-- feuille -->
+        <div class="absolute inset-0 rounded-lg border-4 border-slate-800 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <!-- coin plié -->
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-slate-800 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">A</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-emerald-400 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-emerald-400 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">A1</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-fuchsia-500 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-fuchsia-500 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">A2</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-orange-400 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-orange-400 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">A3</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-sky-400 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-sky-400 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">A4</div>
+      </div>
+    </div>
+    <!-- ====== Rangée 2 (B) ====== -->
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-slate-800 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-slate-800 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">B</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-slate-800 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-slate-800 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">B</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-emerald-400 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-emerald-400 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">B1</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-fuchsia-500 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-fuchsia-500 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">B2</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-fuchsia-500 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-fuchsia-500 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">B2</div>
+      </div>
+    </div>
+    <!-- ====== Rangée 3 (C) ====== -->
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-slate-800 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-slate-800 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">C</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-slate-800 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-slate-800 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">C</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-emerald-400 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-emerald-400 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">C1</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-emerald-400 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-emerald-400 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">C1</div>
+      </div>
+    </div>
+    <div class="flex justify-center pt-2">
+      <div class="relative h-16 w-20">
+        <div class="absolute inset-0 rounded-lg border-4 border-emerald-400 bg-white" style="clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);"></div>
+        <div class="absolute right-0 top-0 h-8 w-8 border-4 border-emerald-400 bg-white"
+             style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        <div class="absolute inset-0 grid place-items-center text-4xl font-extrabold text-slate-800">C1</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 ---
 
-## Le commit : l’unité fondamentale
+# La branche
 
-Un commit :
+<div>
 
-- capture l’état complet du projet
-- représente une intention
-- doit être compréhensible seul
+Une branche est un simple pointeur vers un commit
+- Elle ne “contient” pas du code
+- Elle référence un commit précis
+- Quand tu commits, Git déplace le pointeur nommé "HEAD"
 
-Un bon commit :
+<img src="./public/images/branches.png" alt="DVCS diagram" class="w-[800px] py-5" />
 
-- petit
-- clair
-- revertable
 
----
-
-## Exemple de commit sain
-
-Commande :
-git commit -m "feat(auth): add login endpoint"
-
-On comprend :
-
-- ce qui a changé
-- pourquoi
-- dans quel domaine
-
----
-
-## La branche : une idée reçue
-
-Une branche n’est PAS :
-
-- un environnement
-- une version
-- une release
-
-Une branche est :
-un simple pointeur vers un commit
-
+</div>
 ---
 
 ## Visualisation mentale
