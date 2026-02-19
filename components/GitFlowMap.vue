@@ -101,7 +101,7 @@
         <BranchLine
           :fromX="300"
           :fromY="110"
-          :toX="350"
+          :toX="380"
           :toY="50"
           stroke="#ea0c0c"
           :strokeWidth="5"
@@ -121,6 +121,46 @@
         <Label :x="90" :y="50" text="main" direction="left" :radius="16" />
         <CommitNode
           :x="90"
+          :y="50"
+          hash=""
+          :radius="16"
+          fill="#2563EB"
+          stroke="#1E3A8A"
+        />
+
+        <Label :x="140" :y="50" text="v1.2" direction="top" :radius="16" />
+        <CommitNode
+          :x="140"
+          :y="50"
+          hash=""
+          :radius="16"
+          fill="#2563EB"
+          stroke="#1E3A8A"
+        />
+
+        <Label :x="200" :y="50" text="v1.3" direction="top" :radius="16" />
+        <CommitNode
+          :x="200"
+          :y="50"
+          hash=""
+          :radius="16"
+          fill="#2563EB"
+          stroke="#1E3A8A"
+        />
+
+        <Label :x="440" :y="50" text="v1.4" direction="top" :radius="16" />
+        <CommitNode
+          :x="440"
+          :y="50"
+          hash=""
+          :radius="16"
+          fill="#2563EB"
+          stroke="#1E3A8A"
+        />
+
+        <Label :x="590" :y="50" text="v1.5" direction="top" :radius="16" />
+        <CommitNode
+          :x="590"
           :y="50"
           hash=""
           :radius="16"
@@ -254,7 +294,7 @@
           stroke="#9a1212"
         />
         <CommitNode
-          :x="350"
+          :x="380"
           :y="50"
           hash=""
           :radius="16"

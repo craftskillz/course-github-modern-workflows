@@ -16,7 +16,7 @@ Bien utilisé, Git devient :
 - un **socle de confiance** pour livrer souvent et sereinement
 </div>
 
-<div class="mt-4 underline decoration-red-500 underline-offset-2 text-red-500 font-bold">Apprendre à l'utiliser et à le comprendre n'est vraiment pas une perte de temps</div>
+<div class="mt-4 underline decoration-red-500 underline-offset-2 text-red-500 font-bold">Git est fondamental, apprendre à l'utiliser et à le comprendre n'est vraiment pas une perte de temps !</div>
 
 ---
 
@@ -31,7 +31,7 @@ Tout au long de cet présentation, nous mettrons en correspondance les parties *
 </div>
 
 - les fondamentaux de Git
-- le Trunk Based Development et les autres flows Git
+- les différents workflows Git (GitFlow, GitHub Flow, Trunk Based Development)
 - l' Art du commit efficace
 - le travail en branches
 - la gestion des conflits

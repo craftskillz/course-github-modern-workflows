@@ -42,7 +42,7 @@ Vous en connaissez certaines ?
 
 ## Identifier les changements à tester
 
-- <u class="text-red-600 bg-yellow-200">**Décrire**</u> dans la PR <u class="text-red-600 bg-yellow-200">**ce qui doit être testé**</u> suite à j'ajout/modification du code contenu dans cette PR (potentiellement dans une seule PR si sous-tâches) <u class="text-red-600 bg-yellow-200">**pour être serein que ca ne cassera pas en prod !**</u> 
+- <u class="px-2 rounded text-red-600 bg-yellow-200">**Décrire**</u> dans la PR <u class="px-2 rounded text-red-600 bg-yellow-200">**ce qui doit être testé**</u> suite à j'ajout/modification du code contenu dans cette PR (potentiellement dans une seule PR si sous-tâches) <u class="px-2 rounded text-red-600 bg-yellow-200">**pour être serein que ca ne cassera pas en prod !**</u> 
 
 
 - Ca peut être "RIEN", si c'est un refacto par exemple déjà couvert par des tests, mais il faut <u>s'assurer qu'on l'a vérifié soit même</u> en local dans ce cas (via tests ou manuellement)

@@ -5,7 +5,6 @@
     <span v-click></span>
     <span v-click></span>
     <span v-click></span>
-    <span v-click></span>
   </div>
   <v-stage :config="{ width: 900, height: 250 }">
     <v-layer>
