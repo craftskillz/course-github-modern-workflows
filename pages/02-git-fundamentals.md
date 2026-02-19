@@ -222,7 +222,7 @@ Une successions de snapshots
 # Git est aussi vu comme un graphe
 Un DAG (Directed Acyclic Graph) : Pas de cycle, un seul parent
 
-<GitGraph />
+<GitGraphAnimation />
 
 ---
 
@@ -238,7 +238,7 @@ Avant de manipuler, il faut comprendre la structure
 * **Le HEAD** : L'indicateur "Vous êtes ici".
 <br/><br/>
 
-<GitBranch />
+<GitBranchAnimation />
 </div>
 
 ---

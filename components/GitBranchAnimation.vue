@@ -13,7 +13,7 @@
       <v-rect
         :config="{ x: 0, y: 0, width: 900, height: 250, fill: '#F6F1DA' }"
       />
-      <BranchLabel
+      <BoxLabel
         v-if="clicks === 0"
         :x="100"
         :y="130"
@@ -22,11 +22,11 @@
         :radius="45"
         boxFill="#FBE7C5"
         boxStroke="#E59E1B"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
       <CommitNode :x="100" :y="130" hash="7f9a3c1" :radius="45" />
-      <BranchLabel
+      <BoxLabel
         v-if="clicks === 0"
         :x="100"
         :y="130"
@@ -35,7 +35,7 @@
         :radius="45"
         boxFill="#fbcec5"
         boxStroke="#df4e10"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
       <BranchLine
@@ -45,7 +45,7 @@
         :toX="205"
         :toY="130"
       />
-      <BranchLabel
+      <BoxLabel
         v-if="clicks === 1"
         :x="250"
         :y="130"
@@ -54,7 +54,7 @@
         :radius="45"
         boxFill="#FBE7C5"
         boxStroke="#E59E1B"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
 
@@ -65,7 +65,7 @@
         hash="9b2e6d4"
         :radius="45"
       />
-      <BranchLabel
+      <BoxLabel
         v-if="clicks === 1"
         :x="250"
         :y="130"
@@ -74,7 +74,7 @@
         :radius="45"
         boxFill="#fbcec5"
         boxStroke="#df4e10"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
       <BranchLine
@@ -84,7 +84,7 @@
         :toX="355"
         :toY="130"
       />
-      <BranchLabel
+      <BoxLabel
         v-if="clicks >= 2"
         :x="400"
         :y="130"
@@ -93,7 +93,7 @@
         :radius="45"
         boxFill="#FBE7C5"
         boxStroke="#E59E1B"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
       <CommitNode
@@ -103,7 +103,7 @@
         hash="3c8f1a7"
         :radius="45"
       />
-      <BranchLabel
+      <BoxLabel
         v-if="clicks >= 2 && clicks < 4"
         :x="400"
         :y="130"
@@ -112,7 +112,7 @@
         :radius="45"
         boxFill="#fbcec5"
         boxStroke="#df4e10"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
 
@@ -137,7 +137,7 @@
         hash="6a7c2f8"
         :radius="45"
       />
-      <BranchLabel
+      <BoxLabel
         v-if="clicks == 4"
         :x="690"
         :y="50"
@@ -146,7 +146,7 @@
         :radius="45"
         boxFill="#fbcec5"
         boxStroke="#df4e10"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
       <BranchLine
@@ -156,7 +156,7 @@
         :toX="645"
         :toY="50"
       />
-      <BranchLabel
+      <BoxLabel
         v-if="clicks >= 3"
         :x="690"
         :y="50"
@@ -165,7 +165,7 @@
         :radius="45"
         :width="100"
       />
-      <BranchLabel
+      <BoxLabel
         v-if="clicks === 5"
         :x="250"
         :y="130"
@@ -174,7 +174,7 @@
         :radius="45"
         boxFill="#fbcec5"
         boxStroke="#df4e10"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
     </v-layer>
@@ -185,9 +185,9 @@
 import { computed } from "vue";
 import { useSlideContext } from "@slidev/client";
 
-import BranchLine from "./BranchLine.vue";
-import CommitNode from "./CommitNode.vue";
-import BranchLabel from "./BranchLabel.vue";
+import BranchLine from "./generic/BranchLine.vue";
+import CommitNode from "./generic/CommitNode.vue";
+import BoxLabel from "./generic/BoxLabel.vue";
 
 const ctx = useSlideContext();
 

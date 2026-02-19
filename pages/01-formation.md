@@ -31,7 +31,7 @@ Tout au long de cet présentation, nous mettrons en correspondance les parties *
 </div>
 
 - les fondamentaux de Git
-- le Trunk Based Development
+- le Trunk Based Development et les autres flows Git
 - l' Art du commit efficace
 - le travail en branches
 - la gestion des conflits

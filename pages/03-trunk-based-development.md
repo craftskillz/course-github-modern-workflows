@@ -1,3 +1,35 @@
+# Git Workflows
+Comprendre l'évolution des workflows git
+
+<Callout type="info" title="Important">
+  Le choix tel ou tel type de Workflow Git pour une équipe est très structurant.<br/>
+  Choisir celui qui convient le mieux à votre équipe est primordial et dépends de ce qu'on construit et comment on le déploie.
+
+  - Ce n'est pas le même flow pour une application mobile qui doit supporter plusieurs versions téléchargeables par les end users en même temps
+  - Que pour une application en déploiement continu plusieurs fois par jour ou par semaine vers une seule version cible
+</Callout>
+
+<img src="./public/images/git-workflows.png" alt="Git Origin" class="mx-auto rounded-xl h-[150px]" />
+
+---
+
+# Git Flow
+**"Le"** Standard pendant très longtemps récemment considéré "Bad Practice"
+
+<!--
+- Plusieurs branches de durée de vie longues chacune ayant un rôle particulier
+  - Branche Main : Code **Production Ready**
+  - Branche Develop : Code **Work in Progress**
+  - Branches Features : Code pour les **Nouvelles features**
+  - Branches Release : Pour préparer le déploiement (Vérifier, Tester, etc)
+  - Branches Hotfix : Pour Fix en urgence en production
+-->
+  <GitFlowMap />
+
+
+
+--- 
+
 # Trunk-Based Development (TBD)
 L'alternative performante au GitFlow.
 

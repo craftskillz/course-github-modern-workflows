@@ -13,7 +13,7 @@
         :config="{ x: 0, y: 0, width: 900, height: 400, fill: '#F6F1DA' }"
       />
 
-      <BranchLabel
+      <BoxLabel
         v-if="clicks === 0"
         :x="100"
         :y="230"
@@ -22,7 +22,7 @@
         :radius="45"
         boxFill="#FBE7C5"
         boxStroke="#E59E1B"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
       <!-- First -->
@@ -37,7 +37,7 @@
       />
 
       <!-- Second -->
-      <BranchLabel
+      <BoxLabel
         v-if="clicks >= 1 && clicks < 4"
         :x="300"
         :y="230"
@@ -46,7 +46,7 @@
         :radius="45"
         boxFill="#FBE7C5"
         boxStroke="#E59E1B"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
       <CommitNode
@@ -74,7 +74,7 @@
         :radius="45"
       />
 
-      <BranchLabel
+      <BoxLabel
         v-if="show(2)"
         :x="450"
         :y="120"
@@ -99,7 +99,7 @@
         hash="d1e4b9c"
         :radius="45"
       />
-      <BranchLabel
+      <BoxLabel
         v-if="show(3)"
         :x="450"
         :y="350"
@@ -117,7 +117,7 @@
         :toY="230"
       />
 
-      <BranchLabel
+      <BoxLabel
         v-if="clicks == 4"
         :x="575"
         :y="230"
@@ -126,7 +126,7 @@
         :radius="45"
         boxFill="#FBE7C5"
         boxStroke="#E59E1B"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
       <!-- Fifth -->
@@ -138,7 +138,7 @@
         :radius="45"
       />
 
-      <BranchLabel
+      <BoxLabel
         v-if="clicks == 5"
         :x="795"
         :y="230"
@@ -147,7 +147,7 @@
         :radius="45"
         boxFill="#FBE7C5"
         boxStroke="#E59E1B"
-        boxStrokeWidth="3"
+        :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
       <!-- Sixth -->
@@ -175,9 +175,9 @@
 import { computed } from "vue";
 import { useSlideContext } from "@slidev/client";
 
-import BranchLine from "./BranchLine.vue";
-import CommitNode from "./CommitNode.vue";
-import BranchLabel from "./BranchLabel.vue";
+import BranchLine from "./generic/BranchLine.vue";
+import CommitNode from "./generic/CommitNode.vue";
+import BoxLabel from "./generic/BoxLabel.vue";
 
 const ctx = useSlideContext();
 
