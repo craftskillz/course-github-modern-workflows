@@ -26,7 +26,7 @@
         textColor="#7C4A00"
       />
       <!-- First -->
-      <CommitNode :x="100" :y="230" hash="7f9a3c1" :radius="45" />
+      <CommitNode :x="100" :y="230" text="7f9a3c1" :radius="45" />
       <BranchLine
         v-if="show(1)"
         direction="left"
@@ -53,7 +53,7 @@
         v-if="show(1)"
         :x="300"
         :y="230"
-        hash="9b2e6d4"
+        text="9b2e6d4"
         :radius="45"
       />
 
@@ -70,7 +70,7 @@
         v-if="show(2)"
         :x="450"
         :y="120"
-        hash="3c8f1a7"
+        text="3c8f1a7"
         :radius="45"
       />
 
@@ -96,7 +96,7 @@
         v-if="show(3)"
         :x="450"
         :y="350"
-        hash="d1e4b9c"
+        text="d1e4b9c"
         :radius="45"
       />
       <BoxLabel
@@ -134,7 +134,7 @@
         v-if="show(4)"
         :x="575"
         :y="230"
-        hash="6a7c2f8"
+        text="6a7c2f8"
         :radius="45"
       />
 
@@ -155,7 +155,7 @@
         v-if="show(5)"
         :x="795"
         :y="230"
-        hash="b4d9e3a"
+        text="b4d9e3a"
         :radius="45"
       />
 

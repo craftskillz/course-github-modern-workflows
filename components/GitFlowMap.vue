@@ -118,51 +118,51 @@
     </v-layer>
     <v-layer>
       <template>
-        <Label :x="90" :y="50" text="main" direction="left" :radius="16" />
         <CommitNode
           :x="90"
           :y="50"
-          hash=""
+          text="main"
+          textPosition="left"
           :radius="16"
           fill="#2563EB"
           stroke="#1E3A8A"
         />
 
-        <Label :x="140" :y="50" text="v1.2" direction="top" :radius="16" />
         <CommitNode
           :x="140"
           :y="50"
-          hash=""
+          text="v1.2"
+          textPosition="top"
           :radius="16"
           fill="#2563EB"
           stroke="#1E3A8A"
         />
 
-        <Label :x="200" :y="50" text="v1.3" direction="top" :radius="16" />
         <CommitNode
           :x="200"
           :y="50"
-          hash=""
+          text="v1.3"
+          textPosition="top"
           :radius="16"
           fill="#2563EB"
           stroke="#1E3A8A"
         />
 
-        <Label :x="440" :y="50" text="v1.4" direction="top" :radius="16" />
         <CommitNode
-          :x="440"
+          :x="300"
           :y="50"
-          hash=""
+          text="v1.4"
+          textPosition="top"
           :radius="16"
           fill="#2563EB"
           stroke="#1E3A8A"
         />
 
-        <Label :x="590" :y="50" text="v1.5" direction="top" :radius="16" />
         <CommitNode
           :x="590"
           :y="50"
-          hash=""
+          text="v1.5"
+          textPosition="top"
           :radius="16"
           fill="#2563EB"
           stroke="#1E3A8A"
@@ -171,7 +171,8 @@
         <CommitNode
           :x="840"
           :y="50"
-          hash=""
+          text="v1.6"
+          textPosition="top"
           :radius="16"
           fill="#2563EB"
           stroke="#1E3A8A"
@@ -179,20 +180,19 @@
       </template>
 
       <template v-if="clicks >= 1">
-        <Label :x="90" :y="160" text="develop" direction="left" :radius="16" />
-
         <CommitNode
           :x="90"
           :y="160"
-          hash=""
           :radius="16"
+          text="develop"
+          textPosition="left"
           fill="#EA580C"
           stroke="#9A3412"
         />
         <CommitNode
           :x="840"
           :y="160"
-          hash=""
+          text=""
           :radius="16"
           fill="#EA580C"
           stroke="#9A3412"
@@ -200,18 +200,11 @@
       </template>
 
       <template v-if="clicks >= 2">
-        <Label
-          :x="450"
-          :y="160"
-          text="feature-1"
-          direction="bottom"
-          :radius="16"
-        />
-
         <CommitNode
           :x="450"
           :y="160"
-          hash=""
+          text="feature-1"
+          textPosition="bottom"
           :radius="16"
           fill="#DB2777"
           stroke="#9A3412"
@@ -219,7 +212,7 @@
         <CommitNode
           :x="500"
           :y="255"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -227,7 +220,7 @@
         <CommitNode
           :x="600"
           :y="255"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -236,7 +229,7 @@
         <CommitNode
           :x="650"
           :y="160"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -244,17 +237,11 @@
       </template>
 
       <template v-if="clicks >= 3">
-        <Label
-          :x="680"
-          :y="100"
-          text="release-1"
-          direction="top"
-          :radius="16"
-        />
         <CommitNode
           :x="680"
           :y="100"
-          hash=""
+          text="release-1.6"
+          textPosition="top"
           :radius="16"
           fill="#0891B2"
           stroke="#164E63"
@@ -262,7 +249,7 @@
         <CommitNode
           :x="770"
           :y="100"
-          hash=""
+          text=""
           :radius="16"
           fill="#0891B2"
           stroke="#164E63"
@@ -272,23 +259,17 @@
         <CommitNode
           :x="200"
           :y="50"
-          hash=""
+          text=""
           :radius="16"
           fill="#ea0c0c"
           stroke="#9a1212"
-        />
-        <Label
-          :x="300"
-          :y="110"
-          text="hotfix"
-          direction="bottom"
-          :radius="16"
         />
 
         <CommitNode
           :x="300"
           :y="110"
-          hash=""
+          text="hotfix"
+          textPosition="bottom"
           :radius="16"
           fill="#ea0c0c"
           stroke="#9a1212"
@@ -296,7 +277,8 @@
         <CommitNode
           :x="380"
           :y="50"
-          hash=""
+          text="v1.3.1"
+          textPosition="top"
           :radius="16"
           fill="#ea0c0c"
           stroke="#9a1212"
@@ -304,7 +286,7 @@
         <CommitNode
           :x="380"
           :y="160"
-          hash=""
+          text=""
           :radius="16"
           fill="#ea0c0c"
           stroke="#9a1212"

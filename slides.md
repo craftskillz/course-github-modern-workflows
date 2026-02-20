@@ -22,6 +22,7 @@ transition: slide-left
 mdc: true
 # duration of the presentation
 duration: 35min
+contextMenu: false
 ---
 
 # Best Practices For Smooth Deliveries
@@ -62,12 +63,22 @@ hide: false
 ---
 
 ---
-src: ./pages/03-trunk-based-development.md
+src: ./pages/03-workflows-git.md
 hide: false
 ---
 
 ---
-src: ./pages/04-commit.md
+src: ./pages/04-préconisations-mindlapse.md
+hide: false
+---
+
+---
+src: ./pages/05-commit.md
+hide: false
+---
+
+---
+src: ./pages/06-demo-pratique.md
 hide: false
 ---
 

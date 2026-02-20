@@ -32,7 +32,10 @@ Tout au long de cet présentation, nous mettrons en correspondance les parties *
 
 - les fondamentaux de Git
 - les différents workflows Git (GitFlow, GitHub Flow, Trunk Based Development)
+- préconisations pour Mindlapse
 - l' Art du commit efficace
+- Démo pratique
+- Atelier collaboratif
 - le travail en branches
 - la gestion des conflits
 - les stratégies de collaboration

@@ -63,7 +63,7 @@ Comprendre l'évolution des workflows git
     />
     <InfoCard 
     title='Pourquoi est-ce considéré "Bad Practice"'
-    body='Ralentit le dev (Gestion branche) / Pas adapté CD / Incompatible Trunk Based / <span class="px-2 rounded text-red-600 bg-yellow-200">Illusion de sécurité</span>'
+    body='<span class="px-2 rounded text-red-600 bg-yellow-200">Ralentit le dev (Gestion branche)</span> / Pas adapté CD / <span class="px-2 rounded text-red-600 bg-yellow-200">Illusion de sécurité</span>/ Cargo Cult / <br/>Casse-tête d’intégration'
     :showAt="6" :hideAt="7" fullHeight 
     titleColor="#fd0000cc"
     padding="15px"

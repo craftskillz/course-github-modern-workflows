@@ -68,11 +68,11 @@
     </v-layer>
     <v-layer>
       <template>
-        <Label :x="90" :y="50" text="main" direction="left" :radius="16" />
         <CommitNode
           :x="90"
           :y="50"
-          hash=""
+          text="main"
+          textPosition="left"
           :radius="16"
           fill="#2563EB"
           stroke="#1E3A8A"
@@ -83,7 +83,7 @@
         <CommitNode
           :x="250"
           :y="50"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#9A3412"
@@ -91,7 +91,7 @@
         <CommitNode
           :x="300"
           :y="145"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -102,25 +102,18 @@
         <CommitNode
           :x="400"
           :y="145"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
         />
       </template>
       <template v-if="clicks >= 3">
-        <Label
-          :x="500"
-          :y="145"
-          text="Pull Request"
-          direction="right"
-          :radius="16"
-          color="#059010"
-        />
         <CommitNode
           :x="500"
           :y="145"
-          hash=""
+          text="Pull Request"
+          textPosition="right"
           :radius="16"
           fill="#0ab718"
           stroke="#059010"
@@ -130,7 +123,7 @@
         <CommitNode
           :x="550"
           :y="50"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -138,7 +131,7 @@
       </template>
       <template v-if="clicks >= 5">
         <Label
-          :x="450"
+          :x="550"
           :y="50"
           text="Déploiement automatisé (CI/CD)"
           direction="top"

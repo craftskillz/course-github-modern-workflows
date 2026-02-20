@@ -88,11 +88,11 @@
     </v-layer>
     <v-layer>
       <template>
-        <Label :x="90" :y="120" text="main" direction="left" :radius="16" />
         <CommitNode
           :x="90"
           :y="120"
-          hash=""
+          text="main"
+          textPosition="left"
           :radius="16"
           fill="#2563EB"
           stroke="#1E3A8A"
@@ -103,7 +103,7 @@
         <CommitNode
           :x="150"
           :y="120"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#9A3412"
@@ -112,7 +112,7 @@
         <CommitNode
           :x="200"
           :y="40"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#9A3412"
@@ -121,7 +121,7 @@
         <CommitNode
           :x="250"
           :y="120"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#9A3412"
@@ -129,7 +129,7 @@
         <CommitNode
           :x="300"
           :y="210"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -138,7 +138,7 @@
         <CommitNode
           :x="350"
           :y="120"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -147,7 +147,7 @@
         <CommitNode
           :x="400"
           :y="120"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#9A3412"
@@ -155,7 +155,7 @@
         <CommitNode
           :x="450"
           :y="210"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -164,7 +164,7 @@
         <CommitNode
           :x="500"
           :y="120"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -173,7 +173,7 @@
         <CommitNode
           :x="550"
           :y="40"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"
@@ -182,7 +182,7 @@
         <CommitNode
           :x="600"
           :y="120"
-          hash=""
+          text=""
           :radius="16"
           fill="#DB2777"
           stroke="#831843"

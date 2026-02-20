@@ -24,7 +24,7 @@
         :boxStrokeWidth="3"
         textColor="#7C4A00"
       />
-      <CommitNode :x="100" :y="130" hash="7f9a3c1" :radius="45" />
+      <CommitNode :x="100" :y="130" text="7f9a3c1" :radius="45" />
       <BoxLabel
         v-if="clicks === 0"
         :x="100"
@@ -61,7 +61,7 @@
         v-if="clicks >= 1"
         :x="250"
         :y="130"
-        hash="9b2e6d4"
+        text="9b2e6d4"
         :radius="45"
       />
       <BoxLabel
@@ -99,7 +99,7 @@
         v-if="clicks >= 2"
         :x="400"
         :y="130"
-        hash="3c8f1a7"
+        text="3c8f1a7"
         :radius="45"
       />
       <BoxLabel
@@ -119,7 +119,7 @@
         v-if="clicks >= 3"
         :x="550"
         :y="50"
-        hash="d1e4b9c"
+        text="d1e4b9c"
         :radius="45"
       />
       <BranchLine
@@ -133,7 +133,7 @@
         v-if="clicks >= 3"
         :x="690"
         :y="50"
-        hash="6a7c2f8"
+        text="6a7c2f8"
         :radius="45"
       />
       <BoxLabel
