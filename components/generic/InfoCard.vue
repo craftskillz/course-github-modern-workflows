@@ -61,7 +61,7 @@ const cardStyle = computed(() => ({
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  max-width: 860px;
+  max-width: 868px;
   box-sizing: border-box;
 }
 

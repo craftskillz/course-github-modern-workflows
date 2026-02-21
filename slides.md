@@ -83,37 +83,7 @@ hide: false
 ---
 
 ---
-src: ./pages/04-git-push.md
-hide: false
----
-
----
-src: ./pages/05-origin-remote.md
-hide: false
----
-
----
-src: ./pages/05-git-pull.md
-hide: false
----
-
----
-src: ./pages/06-merge-vs-rebase.md
-hide: false
----
-
----
-src: ./pages/07-historique-git.md
-hide: false
----
-
----
-src: ./pages/08-livrer-avec-git.md
-hide: false
----
-
----
-src: ./pages/09-trunk-based-development.md
+src: ./pages/07-complements.md
 hide: false
 ---
 

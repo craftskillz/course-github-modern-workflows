@@ -35,11 +35,12 @@ Tout au long de cet présentation, nous mettrons en correspondance les parties *
 - préconisations pour Mindlapse
 - l' Art du commit efficace
 - Démo pratique
-- Atelier collaboratif
-- le travail en branches
-- la gestion des conflits
-- les stratégies de collaboration
-- les bonnes pratiques concrètes du quotidien
+    - atelier collaboratif
+    - les configurations GitHub
+    - travailler avec les branches features
+    - la gestion des conflits
+    - l'approche squash commits
+- Compléments
 
 </div>
 
