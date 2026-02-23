@@ -1,5 +1,3 @@
----
-
 # 🎯 Cible recommandée : GitHub Flow maîtrisé
 
 ## Stratégie de branches cible

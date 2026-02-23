@@ -1,3 +1,7 @@
+---
+transition: fade-out
+---
+
 # Pourquoi un atelier GIT ?
 
 <div>

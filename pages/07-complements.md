@@ -1,26 +1,15 @@
-# Compléments
-Git Pull
+# Compléments — Git Pull
 
-Si ma branche locale est simplement en retard par rapport au remote,
-git pull fait automatiquement un fast-forward, sans aucune configuration.
-Fast-forward = déplacement de pointeur, pas un merge.
-✔️ Oui
-✔️ Par défaut
-✔️ Sans commit de merge
-✔️ Sans option particulière
+Les 3 modes d'intégration
 
-Commande utile pour vérifier avant de pull
-git status
-Your branch is behind 'origin/feature' by 2 commits.
+Quand tu fais `git pull`, Git fait : `git fetch` + **intégration**
 
 
+- Il y a **3 façons** de faire cette intégration
 
-Commande :
-git pull
+    - Git Pull — Mode Fast-Forward (FF)
 
-Équivaut à :
-git fetch
-git merge
+    - Git Pull — Mode Merge (défaut si divergence)
 
-Donc un merge automatique, souvent invisible (Ca c'est la bonne façon de faire les choses)
-
+    - Git Pull — Mode Rebase
+    
